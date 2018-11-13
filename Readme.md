@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Daud Sultygov](https://up.htmlacademy.ru/htmlcss/23/user/869301).
-* Наставник: `Неизвестно`.
+* Наставник: [Артемий Альтигин](https://htmlacademy.ru/profile/artem).
 
 ---
 
