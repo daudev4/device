@@ -2,21 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Магазин гаджетов DEVICE</title>
   </head>
   <body>
     <header class="main-header">
       <div class="user-navigation">
-        <!-- Здесь будет форма поиска -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <span class="visually-hidden">Поиск по сайту</span>
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
         <ul class="login">
-          <li class="login-link"><a href="#">Войти</a></li>
+          <li class="login-link">
+            <a href="login.html">Войти</a>
+          </li>
         </ul>
         <a class="compare" href="compare.html">Сравнить</a>
         <a class="cart" href="cart.html">Корзина</a>
       </div>
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.svg" width="164" height="36" alt="Логотип DEVICE">
+          <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина гаджетов DEVICE">
         </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог товаров</a></li>
@@ -27,7 +32,6 @@
       </nav>
     </header>
     <main class="container">
-
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
       
       <section class="about">
@@ -35,18 +39,18 @@
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="delivery">
-          <li class="delivery-companies">Деловые Линии</li>
-          <li class="delivery-companies">Автотрейдинг</li>
-          <li class="delivery-companies">ЖелДорЭкспедиция</li>
+          <li class="delivery-company">Деловые Линии</li>
+          <li class="delivery-company">Автотрейдинг</li>
+          <li class="delivery-company">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about.html" class="button">Подробнее о нас</a>
+        <a class="button" href="about.html">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="map.html">
-          <img src="img/map.jpg" width="560" height="222" alt="Наше местоположение">
+          <img src="img/map.jpg" width="560" height="222" alt="Адрес офиса: г. Москва, ул. Строителей, 15">
         </a>
         <a class="button" href="write-us.html">Напишите нам</a>
       </section>
@@ -61,10 +65,9 @@
       </div>
 
       <a class="main-footer-logo">
-          <img src="img/logo.svg" width="164" height="36" alt="Логотип DEVICE">
+          <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина гаджетов DEVICE">
       </a>
       <ul class="footer site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="waranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -81,9 +84,49 @@
         <li class="social-button"><a href="#">Twitter</a></li>
       </ul>
 
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright">
-        <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
+      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy профессиональный онлайн-курс HTML и CSS, уровень 1">
       </a>
     </footer>
+
+    <section class="modal modal-catalog">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <ul class="catalog-submenu">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="catalog-monopods.html">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
+
+    <section class="modal modal-textus">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="textus" action="https://echo.htmlacademy.ru" method="post">
+        <p class="textus-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия"> 
+        </p>
+        <p class="textus-item">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" id="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="textus-item">
+          <label for="letter">Текст письма:</label>
+          <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea> 
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form> 
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <p>
+        <img src="img/map-big.jpg" width="960" height="559" alt="Адрес офиса: г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
