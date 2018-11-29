@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/gilroylight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("/fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Gilroy-ExtraBold", Impact, sans-serif;
+  font-size: 18px;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  
+
+  background-color: #f0c52e;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header {
+  color: #000000;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.search-line {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: transparent;
+  border: none;
+}
+
+.search-line:hover,
+.search-line:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-line:active {
+  color: rgba(0, 0, 0, 0);
+
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  border: 2px solid #000000;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation,
+.site-navigation  {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-family: "Gilroy-ExtraBold", Impact, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.header-user a,
+.header-navigation a {
+  color: #000000;
+}
+
+.header-user a:hover,
+.header-user a:focus,
+.header-navigation a:hover,
+.header-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user a:active,
+.header-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy-ExtraBold", Impact, sans-serif;
+  font-size: 47.5px;
+  line-height: 47.5px;
+  text-align: left;
+}
+
+.about-us p,
+.contacts p {
+  text-align: left;
+}
+
+.transportation {
+  list-style: none;
+}
+
+.transportation li {
+  font-family: "Gilroy-ExtraBold", Impact, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.page-title {
+  font-family: "Gilroy-ExtraasfBold", Impact, sans-serif;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-user a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user a:hover,
+.footer-user a:focus {
+  color: #ffffff;
+}
+
+.footer-user a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation a {
+  color: #ffffff;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-contacts address {
+  font: inherit;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+
+/*Временно, пока нет иконок*/
+.social-button {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.1);
+}
+/*Временно, пока нет иконок*/
+
+
+.footer-copyright img:hover,
+.footer-copyright img:focus {
+  opacity: 0.6;
+}
+
+.footer-copyright img:active {
+  opacity: 0.3;
+}
+
+.modal {
+  display: none;
+}
