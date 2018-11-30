@@ -45,7 +45,7 @@ a {
 
 .button:hover,
 .button:focus {
-
+  cursor:pointer;
 }
 
 .button:active {
@@ -87,6 +87,7 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+  cursor: pointer;
 }
 
 .search-button:active {
@@ -247,6 +248,8 @@ a {
 .compare-add:hover,
 .compare-add:focus {
   color: #000000;
+
+  cursor: pointer;
 }
 
 .compare-add:active {
