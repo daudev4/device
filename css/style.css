@@ -152,20 +152,20 @@ a {
   line-height: 40px;
 }
 
+.logo img:hover,
+.logo img:focus {
+  opacity: 0.6;
+}
+
+.logo img:active {
+  opacity: 0.3;
+}
+
 .page-title {
   font-family: "Gilroy-ExtraBold", Arial Black, sans-serif;
   font-size: 47.5px;
   line-height: 47.5px;
   text-align: left;
-}
-
-.header-logo img:hover,
-.header-logo img:focus {
-  opacity: 0.6;
-}
-
-.header-logo img:active {
-  opacity: 0.3;
 }
 
 .breadcrumbs {
