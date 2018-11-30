@@ -58,6 +58,18 @@ a {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.search-line::placeholder {
+  color: #000000;
+}
+
+.search-line::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.search-line:-ms-input-placeholder {
+  color: #000000;
+}
+
 .search-line {
   opacity: 0.3;
 
