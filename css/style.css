@@ -156,21 +156,37 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
-  width: 441px;
+  position: relative;
+
+  width: 403px;
+  padding-left: 38px;
   display: flex;
 }
 
+.search-form::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 3px;
+  
+  width: 16px;
+  height: 16px;
+  
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .search-line {
-  width: 355px;
   padding: 0;
-  position: relative;
-  padding-left: 38px;
-  vertical-align: middle;
+  padding-bottom: 2px;
+  width: 317px;
 
   opacity: 0.3;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid transparent;
+
   outline: none;
 }
 
@@ -181,40 +197,21 @@ input[type="radio"].visually-hidden {
 .search-line:focus,
 .search-line:active {
   opacity: 1;
-
-  border-bottom: 2px solid #000000;
-}
-
-.search-line::before {
-  content: "";
-
-  position: absolute;
-  top: 10px;
-  left: 0%;
-
-  width: 16px;
-  height: 16px;
-
-  background-image: url("../img/search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  opacity: 1;
 }
 
 .search-line::placeholder {
   color: #000000;
-  letter-spacing:   0.01em;
+  letter-spacing: 0.01em;
 }
 
 .search-line::-webkit-input-placeholder {
   color: #000000;
-  letter-spacing:   0.01em;
+  letter-spacing: 0.01em;
 }
 
 .search-line:-ms-input-placeholder {
   color: #000000;
-  letter-spacing:   0.01em;
+  letter-spacing: 0.01em;
 }
 
 .search-line:focus ~ .search-button,
@@ -223,6 +220,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
+  position: relative;
+
+  display: none;
   padding: 14px 19px;
 
   font-weight: 300;
@@ -230,7 +230,18 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
   border: 2px solid #000000;
-  display: none;
+}
+
+.search-button::before {
+  content: "";
+  
+  position: absolute;
+  bottom: -2px;
+  right: 100%;
+
+  width: 355px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .search-button:hover,
