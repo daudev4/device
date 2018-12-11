@@ -167,7 +167,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 3px;
   
   width: 16px;
@@ -180,7 +180,6 @@ input[type="radio"].visually-hidden {
 
 .search-line {
   padding: 0;
-  padding-bottom: 2px;
   width: 317px;
 
   opacity: 0.3;
@@ -226,10 +225,13 @@ input[type="radio"].visually-hidden {
   padding: 14px 19px;
 
   font-weight: 300;
+  ;
 
   background-color: transparent;
   border: none;
   border: 2px solid #000000;
+
+  outline: none;
 }
 
 .search-button::before {
@@ -239,7 +241,7 @@ input[type="radio"].visually-hidden {
   bottom: -2px;
   right: 100%;
 
-  width: 355px;
+  width: 358px;
   height: 2px;
   background-color: #000000;
 }
@@ -421,8 +423,8 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 1160px;
   padding: 0;
-  padding-top: 23px;
-  padding-bottom: 33px;
+  padding-top: 21px;
+  padding-bottom: 34px;
 
 
   background-color: rgb(247, 226, 150);
