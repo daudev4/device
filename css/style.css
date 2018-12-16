@@ -1394,8 +1394,9 @@ input[type="radio"].visually-hidden {
   height: 55px;
 
   font-size: 0;
-
-  background-color: rgba(240, 197, 46, 0.5);
+  
+  opacity: 0.5;
+  background-color: rgb(240, 197, 46);
   border: 0;
   border-radius: 50%;
 
@@ -1426,10 +1427,9 @@ input[type="radio"].visually-hidden {
 
 .modal-close:hover,
 .modal-close:focus {
-  background-color: rgba(240, 197, 46, 1);
+    opacity: 1;
 }
 
 .modal-close:active {
-  background-color: rgba(240, 197, 46, 0.3);
-  ;
+    opacity: 0.3;
 }
