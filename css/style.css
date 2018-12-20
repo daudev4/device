@@ -51,7 +51,6 @@ body {
   letter-spacing: 0.15px;
 
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 
 a {
@@ -202,11 +201,11 @@ input[type="radio"].visually-hidden {
 
 .search-line {
   padding: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   min-width: 317px;
   
-  font-weight: 300;
+  font: inherit;
 
   background-color: transparent;
   border: none;
@@ -235,7 +234,7 @@ input[type="radio"].visually-hidden {
 .search-button {
   position: relative;
 
-  display: none;
+  /*display: none;*/
   padding: 14px 19px;
 
   font-weight: 300;
@@ -1435,6 +1434,7 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border:none;
+  outline: none;
 
   cursor: pointer;
 }
