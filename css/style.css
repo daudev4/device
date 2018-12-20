@@ -427,7 +427,7 @@ input[type="radio"].visually-hidden {
   margin-right: 293px;
 }
 
-.catalog-menu a::after {
+.catalog-menu > a::after {
   content: "";
 
   position: absolute;
@@ -454,7 +454,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 21px;
   padding-bottom: 34px;
-
 
   background-color: rgb(247, 226, 150);
 }
@@ -1072,7 +1071,6 @@ input[type="radio"].visually-hidden {
   background: #91c92f;
 }
 
-
 .range-controls .toggle {
   position: absolute;
   top: 4px;
@@ -1144,27 +1142,37 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.filter-input:hover+label::before {
+.filter-input:hover + label::before,
+.filter-input:focus + label::before {
   opacity: 0.6;
 }
 
-.filter-input:disabled+label {
+.filter-input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-input:active + label::before {
+  opacity: 1;
+}
+
+.filter-input:disabled + label {
   color: #a6a6a6;
   cursor: default;
 }
 
-.filter-input:disabled+label::before {
+.filter-input:disabled + label::before {
   opacity: 0.25;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
 
   position: absolute;
   top: 8px;
   left: -40px;
 
-  width: 27px;
+  width: 23px;
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
@@ -1173,10 +1181,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:checked + label::before {
+  width: 27px;
+
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-input-radio+label::before {
+.filter-input-radio + label::before {
   content: "";
 
   position: absolute;
@@ -1223,16 +1233,22 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
 
   width: 360px;
+  min-height: 460px;
   margin-right: 40px;
   margin-bottom: 46px;
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
+}
+
+.catalog-item:nth-last-child(1),
+.catalog-item:nth-last-child(2) {
+  margin-bottom: 35px;
 }
 
 .catalog-item .flag {
@@ -1280,7 +1296,8 @@ input[type="radio"].visually-hidden {
   background-color: rgba(238, 238, 238, 0.7);
 }
 
-.catalog-item:hover .catalog-item-actions {
+.catalog-item:hover .catalog-item-actions,
+.catalog-item:focus .catalog-item-actions {
   display: block;
 }
 
@@ -1350,12 +1367,98 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price {
   font-weight: 300;
-  font-family: "Gilroy", Century Gothic, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.16px;
-  text-align: right;
+  font-family: "Gilroy", Century Gothic, sans-serif;
   color: #464646;
+  text-align: right;
+  letter-spacing: 0.16px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 760px;
+  margin-bottom: 77px;
+  margin-left: 72px;
+  
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", Arial Black, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 89px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 4px;
+
+  list-style: none;
+}
+
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-item-current a {
+  color: #000000;
+}
+
+
+.pagination-button {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  font: inherit;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  background-color: transparent;
+  border:none;
+
+  cursor: pointer;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-button-back {
+  text-align: left;
+  padding-right: 28px;
+  padding-left: 30px;
+  margin-right: 211px;
+}
+
+.pagination-button-forward {
+  text-align: right;
+  padding-right: 28px;
+  padding-left: 32px;
 }
 
 @keyframes bounce {

@@ -1,14 +1,14 @@
 var feedback = document.querySelector(".feedback-button");
-var feedbackModal = document.querySelector(".modal-feedback");
-var feedbackClose = feedbackModal.querySelector(".modal-close");
-var feedbackForm = feedbackModal.querySelector("form");
-var feedbackName = feedbackModal.querySelector(".feedback-name");
-var feedbackEmail = feedbackModal.querySelector(".feedback-email");
-var feedbackLetter = feedbackModal.querySelector(".feedback-letter");
+    feedbackModal = document.querySelector(".modal-feedback");
+    feedbackClose = feedbackModal.querySelector(".modal-close");
+    feedbackForm = feedbackModal.querySelector("form");
+    feedbackName = feedbackModal.querySelector(".feedback-name");
+    feedbackEmail = feedbackModal.querySelector(".feedback-email");
+    feedbackLetter = feedbackModal.querySelector(".feedback-letter");
 
-var isStorageSupport = true;
-var storageName = "";
-var storageEmail = "";
+    isStorageSupport = true;
+    storageName = "";
+    storageEmail = "";
 
 try {
   storageName = localStorage.getItem("name");
@@ -69,9 +69,10 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+
 var map = document.querySelector(".map");
-var mapModal = document.querySelector(".modal-map");
-var mapClose = mapModal.querySelector(".modal-close");
+    mapModal = document.querySelector(".modal-map");
+    mapClose = mapModal.querySelector(".modal-close");
 
 map.addEventListener("click", function (evt) {
   evt.preventDefault();
