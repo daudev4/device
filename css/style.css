@@ -501,6 +501,8 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   z-index: 1;
+
+  margin-bottom: 86px;
 }
 
 .slider-controls {
@@ -720,6 +722,132 @@ input[type="radio"].visually-hidden {
   padding-left: 2px;
 }
 
+.categories {
+  margin-bottom: 80px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.categories-list-item {
+  width: 160px;
+}
+
+.category-link {
+  display: block;
+}
+
+.category-link:hover .category-image,
+.category-link:focus .category-image {
+  background-color: #f0c52e;
+}
+
+.category-link:active .category-image::before,
+.category-link:active .category-name {
+  opacity: 0.3;
+}
+
+.category-name {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", Arial Black, sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
+.category-image {
+  position: relative;
+
+  width: 160px;
+  height: 160px;
+  margin-bottom: 33px;
+
+  background-color: rgb(247, 226, 150);
+}
+
+.category-image::before {
+  content: "";
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.category-vr::before {
+  top: 52px;
+  left: 31px;
+
+  width: 97px;
+  height: 55px;
+
+  background-image: url("../img/popular-1.svg");
+}
+
+.category-monopods::before {
+  top: 41px;
+  left: 38px;
+
+  width: 86px;
+  height: 117px;
+
+  background-image: url("../img/popular-2.svg");
+}
+
+.category-cameras::before {
+  top: 38px;
+  left: 49px;
+
+  width: 71px;
+  height: 87px;
+
+  background-image: url("../img/popular-3.svg");
+}
+
+.category-bands::before {
+  top: 50px;
+  left: 28px;
+
+  width: 107px;
+  height: 65px;
+
+  background-image: url("../img/popular-4.svg");
+}
+
+.category-watches::before {
+  top: 32px;
+  left: 55px;
+
+  width: 56px;
+  height: 98px;
+
+  background-image: url("../img/popular-5.svg");
+}
+
+.category-copters::before {
+  top: 49px;
+  left: 13px;
+
+  width: 132px;
+  height: 69px;
+
+  background-image: url("../img/popular-6.svg");
+}
+
 .about {
   display: flex;
   justify-content: space-between;
@@ -937,7 +1065,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 1;
   
   width: 100%;
 
@@ -1070,6 +1198,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-title {
+  z-index: 2;
+
   box-sizing: border-box;
   width: 328px;
   margin: 0;
@@ -1301,7 +1431,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   position: relative;
-  z-index: 1;
 
   display: flex;
   align-items: baseline;
