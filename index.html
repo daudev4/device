@@ -65,14 +65,19 @@
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
       <section class="slider">
         <h2 class="visually-hidden">Популярные товары</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item">
-            <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+          <li class="slider-item slider-item-1">
+            <div class="slider-image">
+               <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            </div>
             <div class="slider-item-info">
               <h3>Делай селфи,<br> как Бен Стиллер!</h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -91,11 +96,13 @@
               </table>
             </div>
           </li>
-          <li class="slider-item">
-            <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+          <li class="slider-item slider-item-2">
+            <div class="slider-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+            </div>
             <div class="slider-item-info">
-              <h3>Худеем<br>правильно!</h3>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <h3>Худеем<br> правильно!</h3>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
               <a class="slider-item-button button" href="#">Подробнее</a>
               <table>
                 <tr>
@@ -107,11 +114,13 @@
               </table>
             </div>
           </li>
-          <li class="slider-item">
-            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+          <li class="slider-item slider-item-3">
+            <div class="slider-image">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+            </div>
             <div class="slider-item-info">
               <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="slider-item-button button" href="#">Подробнее</a>
               <table>
                 <tr>
