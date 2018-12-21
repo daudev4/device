@@ -513,8 +513,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 98px;
   height: 32px;
-
-  font-size: 0;
 }
 
 .slider-controls label {
@@ -528,7 +526,6 @@ input[type="radio"].visually-hidden {
   
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .slider-controls label::after {
@@ -545,6 +542,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-button-empty.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.slider-input:focus ~ .slider-controls label::after {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -614,7 +616,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item-info::before {
   content: "";
-  
+
   position: absolute;
   top: 39px;
   left: 0;
