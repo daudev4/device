@@ -75,7 +75,8 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   
   border: 0;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -216,13 +217,55 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
+.search-line::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.15px;
+}
+
+.search-line:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.15px;
+}
+
+.search-line::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.15px;
+}
+
 .search-line::placeholder {
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.15px;
 }
 
+.search-line:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-line:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-line:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .search-line:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.search-line:focus::-webkit-input-placeholder,
+.search-line:active::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.search-line:focus:-ms-input-placeholder,
+.search-line:active:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.search-line:focus::-ms-input-placeholder,
+.search-line:active::-ms-input-placeholder {
+  font-size: 0;
 }
 
 .search-line:focus::placeholder,
@@ -1141,14 +1184,16 @@ input[type="radio"].visually-hidden {
 }
 
 .brand-link img {
-  filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); 
   opacity: 0.2;
 }
 
 .brand-link:hover img,
 .brand-link:focus img {
   opacity: 1;
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .about {
@@ -1670,7 +1715,10 @@ input[type="radio"].visually-hidden {
   display: block;
 
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
   font-size: 14px;
   line-height: 40px;
@@ -1996,28 +2044,55 @@ input[type="radio"].visually-hidden {
   padding-left: 32px;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
   }
 
   70% {
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 
   90% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -2025,14 +2100,41 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -2048,11 +2150,13 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  animation: bounce 0.7s;
+  -webkit-animation: bounce 0.7s;
+          animation: bounce 0.7s;
 }
 
 .modal-error {
-  animation: shake 0.7s;
+  -webkit-animation: shake 0.7s;
+          animation: shake 0.7s;
 }
 
 .modal-close {
@@ -2236,7 +2340,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo {
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 
   width: 163px;
   height: 35px;
