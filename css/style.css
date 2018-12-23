@@ -1173,21 +1173,42 @@ input[type="radio"].visually-hidden {
   min-height: 254px;
 }
 
-.brand-link {
-  display: block;
-}
-
 .brand-link img {
-  opacity: 0.2;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  visibility: hidden;
 }
 
 .brand-link:hover img,
-.brand-link:focus img {
+.brand-link:focus img{
+  visibility: visible;
+}
+
+.brand-link {
+  display: block;
+  width: 260px;
+  height: 100px;
+  opacity: 0.2;
+}
+
+.brand-link-dji {
+  background-image: url("../img/brand-dji-gray.png");
+}
+
+.brand-link-spg {
+  background-image: url("../img/brand-spg-gray.png");
+}
+
+.brand-link-gopro {
+  background-image: url("../img/brand-gopro-gray.png");
+}
+
+.brand-link-vive {
+  background-image: url("../img/brand-vive-gray.png");
+}
+
+.brand-link:hover,
+.brand-link:focus {
+  background-image: none;
   opacity: 1;
-  -webkit-filter: none;
-          filter: none;
 }
 
 .about {
