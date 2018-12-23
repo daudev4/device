@@ -717,7 +717,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item-button {
-  width: 220px;
+  min-width: 220px;
   margin-bottom: 50px;
   padding-left: 4px;
 }
@@ -1239,7 +1239,7 @@ input[type="radio"].visually-hidden {
 
 .about-us .button,
 .contacts .button {
-  width: 260px;
+  min-width: 260px;
 }
 
 .about-us {
@@ -1784,7 +1784,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  width: 200px;
+  min-width: 200px;
 }
 
 .catalog {
@@ -1881,8 +1881,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-actions button {
   display: block;
   margin: 0 auto;
-  padding-left: 37px;
-  padding-right: 39px;
+  min-width: 200px;
 }
 
 .compare-add {
@@ -2277,7 +2276,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback .button {
-  width: 200px;
+  min-width: 200px;
 }
 
 .modal-map {
