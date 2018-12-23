@@ -3,7 +3,6 @@
   font-family: "Gilroy";
   font-style: normal;
 
-
   src: url("../fonts/gilroylight.woff2") format("woff2");
   src: url("../fonts/gilroylight.woff") format("woff");
 }
@@ -12,7 +11,6 @@
   font-weight: 800;
   font-family: "Gilroy";
   font-style: normal;
-
 
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
   src: url("../fonts/gilroyextrabold.woff") format("woff");
@@ -32,7 +30,6 @@
   font-family: "Open Sans";
   font-style: normal;
 
-
   src: url("../fonts/opensans.woff2") format("woff2");
   src: url("../fonts/opensans.woff") format("woff");
 }
@@ -41,7 +38,6 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-
 
   font-weight: 300;
   font-size: 15px;
@@ -107,7 +103,6 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
 }
-
 
 .button::before {
   content: "";
