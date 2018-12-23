@@ -1012,7 +1012,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", ""Arial Black"", sans-serif;
+  font-family: "Gilroy", "Arial Black", sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -1054,11 +1054,6 @@ input[type="radio"].visually-hidden {
   height: 40px;
   margin: 0;
 }
-
-/*.services-slider-input:focus ~ .services-slider-controls label {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}*/
 
 .services-slider-input[id="service-1"]:checked ~ .services-slider-controls label[for="service-1"],
 .services-slider-input[id="service-2"]:checked ~ .services-slider-controls label[for="service-2"],
