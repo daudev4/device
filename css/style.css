@@ -887,7 +887,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   background:
-    linear-gradient (to bottom, #fff 0%,
+    linear-gradient(to bottom, #fff 0%,
     #fff 25.77%,
     #e5e5e5 25.77%,
     #e5e5e5 100%);
@@ -1739,15 +1739,15 @@ input[type="radio"].visually-hidden {
 
   display: block;
 
+  font-size: 14px;
+  line-height: 40px;
+  text-align: left;
+
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-
-  font-size: 14px;
-  line-height: 40px;
-  text-align: left;
 }
 
 .filter-input:hover + label::before,
