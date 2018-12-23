@@ -26,7 +26,7 @@
           </form>
           <ul class="user-navigation">
             <li class="user-login">
-              <ul>
+              <ul class="user-login-list">
                 <li><a class="login" href="login.html">Валентин Петухов</a></li>
                 <li><a class="logout" href="#">Выйти</a></li>
               </ul>
@@ -37,10 +37,10 @@
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li class="nav-item catalog-menu">
-              <a href="#">Каталог товаров</a>
+            <li class="nav-item nav-catalog">
+              <a href="catalog.html">Каталог товаров</a>
               <div class="catalog-menu-wrapper">
-                <div class="catalog-menu-list">
+                <div class="catalog-menu">
                   <ul>
                     <li><a href="#">Виртуальная реальность</a></li>
                     <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -79,8 +79,7 @@
 
       <div class="catalog-wrapper">
         <section class="sort">
-          <div class="container">
-            <div class="sort-line">
+          <div class="sort-line">
               <h3>Сортировка:</h3>
               <ul class="sort-type">
                 <li class="sort-type-item sort-current"><a href="#">По цене</a></li>
@@ -91,7 +90,6 @@
                 <li class="sort-order-up"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
                 <li class="sort-order-down sort-current"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
               </ul>
-            </div>
           </div>
         </section>
 
@@ -189,7 +187,7 @@
               <div class="catalog-item-info">
                 <h3>
                   <a href="catalog-item.html">
-                    <span class="catalog-item-title">Профессиональная селфи-палка</span>
+                    <span class="catalog-item-title">Профессиональная<br> селфи-палка</span>
                   </a>
                 </h3>
                 <span class="catalog-item-price">1 500 руб.</span>
@@ -234,13 +232,13 @@
           </ul>
 
           <div class="pagination">
-            <button class="pagination-button pagination-button-back">Назад</button>
+            <a class="pagination-control pagination-control-back" href="#">Назад</a>
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
             </ul>
-            <button class="pagination-button pagination-button-forward">Вперед</button>
+            <a class="pagination-control pagination-control-forward" href="#">Вперед</a>
           </div>
         </section>
       </div>
@@ -256,7 +254,7 @@
           </div>
           <ul class="user-navigation">
             <li class="user-login">
-              <ul>
+              <ul class="user-login-list">
                 <li><a class="login" href="login.html">Валентин Петухов</a></li>
                 <li><a class="logout" href="#">Выйти</a></li>
               </ul>
@@ -272,7 +270,7 @@
             <li class="nav-item nav-waranty"><a href="waranty.html">Гарантия</a></li>
             <li class="nav-item nav-contacts"><a href="contacts.html">Контакты</a></li>
           </ul>
-          <p class="phone">Тел.: <a href="#">+7 (495) 495-95-95</a></p>
+          <p class="phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         </div>
         <div class="footer-social">
           <ul class="social-buttons">
