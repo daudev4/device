@@ -69,7 +69,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
 var map = document.querySelector(".map");
     mapModal = document.querySelector(".modal-map");
     mapClose = mapModal.querySelector(".modal-close");
