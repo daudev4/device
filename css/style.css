@@ -829,7 +829,7 @@ input[type="radio"].visually-hidden {
 }
 
 .categories {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 
   color: #000000;
 
@@ -854,6 +854,7 @@ input[type="radio"].visually-hidden {
 .categories-list-item {
   width: 160px;
   margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .categories-list-item:nth-child(6n) {
@@ -1902,13 +1903,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  padding-left: 39px;
+
 }
 
 .filter-option label {
   position: relative;
 
   display: block;
+  padding-left: 39px;
 
   font-size: 14px;
   line-height: 40px;
@@ -1949,7 +1951,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 8px;
-  left: -40px;
+  left: -1px;
 
   width: 23px;
   height: 23px;
@@ -1970,7 +1972,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 7px;
-  left: -40px;
+  left: -1px;
 
   width: 25px;
   height: 25px;
@@ -2002,9 +2004,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: flex-start;
   width: 760px;
   margin: 0;
   margin-top: 70px;
@@ -2789,6 +2789,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2807,20 +2808,25 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: flex-start;
 
   min-width: 142px;
   margin: 0;
-  margin-right: auto;
-  margin-left: 429px;
   padding: 0;
+  padding-right: 53px;
 
   list-style: none;
 }
 
 .social-button {
+  margin-right: 23px;
+}
+
+.social-button:last-of-type {
+  margin-right: 0;
+}
+
+.social-button a {
   display: block;
   width: 32px;
   height: 32px;
@@ -2831,12 +2837,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button a:hover,
+.social-button a:focus {
   opacity: 0.6;
 }
 
-.social-button:active {
+.social-button a:active {
   opacity: 0.1;
 }
 
